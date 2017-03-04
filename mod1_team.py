@@ -37,29 +37,9 @@ def moreRed(percent):
     setRed(p, r*(percent * .01 + 1))
   repaint(pic)
 
-
-
-def roseColoredGoggles():
-  pic = get_pic()
-  pixels = getPixels(pic)
-  for p in pixels:
-    """Find out how to turn RGB White into RGB Pink
-    White = RGB(255,255,255)
-    Pink = RGB(255,128,128)
-    White : pink as R, G*.5, B*.5
-    """
-    green = getGreen(p)
-    blue = getBlue(p)
-    setGreen(p,green*.5)
-    setBlue(p,blue*.5)
-  repaint(pic)
-
-
-
-
-
-
-
+  """Write a function called roseColoredGlasses that makes an image look pink. 
+  Think about how you can manipulate the RGB components of each pixel to accomplish this."""
+#caleb
 def roseColoredGlasses():
   pic = get_pic()
   show(pic) #testing
