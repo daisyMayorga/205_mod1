@@ -56,7 +56,18 @@ def roseColoredGlasses():
     setBlue(p,blue*.5)
   repaint(pic)
     
-
+#Daisy
+"""Write a function called lightenUp that uses a for loop to lighten each pixel in a picture. 
+Remember that you can use getColor and setColor to access the color of a pixel"""
+ 
+def lightenUp():
+  pic = get_pic()
+  pixels = getPixels(pic)  
+  for p in pixels:
+    oldColor = getColor(p)
+    newColor = makeLighter(oldColor)
+    setColor(p, newColor)
+  repaint(pic)
 
 
 
